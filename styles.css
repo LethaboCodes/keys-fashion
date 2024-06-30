@@ -1,0 +1,624 @@
+/* global css */
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    text-align: center;
+    padding: 0px;
+    line-height: auto;
+}
+
+.logo {
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: xxx-large;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.navigation {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+}
+
+.navigation .active {
+    color: #783357;
+}
+
+.footer {
+    text-align: center;
+    color: #fff;
+    background-color: #783357;
+    padding: 0px;
+    padding-top: 10px;
+    margin-top: auto;
+}
+
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.email-input {
+    padding: 10px;
+    width: 200px;
+    border: px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.signup-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icons {
+    color: #783357;
+    line-height: 1px;
+}
+
+
+/* home page css*/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.welcome-section {
+    font-family: 'Cinzel Decorative', sans-serif;
+    background-image: url('homepagepictures/E27511B8-B7A7-4489-AE05-E131D7362D9C_1_201_a.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #783357;
+    text-align: center;
+    padding: 170px 20px;
+    font-size: 3vw;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.welcome-section h3 {
+    font-size: 2vw;
+}
+
+.latest-arrivals {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-item {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.latest-arrivals button{
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #783357;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.categories {
+    padding: 20px;
+    background-color: #fff;
+    align-items: center;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.category-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    width: 45%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-item h3 {
+    font-size: 1.5em; 
+    color: #333;
+    margin-bottom: 10px; 
+}
+
+.category-item p {
+    font-size: 1em; 
+    color: #666; 
+    line-height: 1.5; 
+    margin-bottom: 10px;
+}
+
+.category-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Shopping category css */
+
+.shopping-categories {
+    font-family: 'Cinzel Decorative', sans-serif;
+    background-image: url('shoppingcategorypictures/clark-street-mercantile-qnKhZJPKFD8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 170px 20px;
+    font-size: 4vw;
+}
+
+.category-table {
+    width: 100%;
+}
+
+.table-category-item {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.table-category-item img {
+    width: 100%;
+    height: 25vw;
+    border-radius: 8px;
+}
+
+.table-category-item h4 {
+    font-family: 'Cinzel', sans-serif;
+    text-align: center;
+    position: absolute;
+    font-size: 5vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* product category css */
+
+.product-categories {
+    font-family: 'Cinzel Decorative', sans-serif;
+    background-image: url('productcategorypictures/pexels-ron-lach-10295321.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 170px 20px;
+    font-size: 5vw;
+}
+
+.category-section {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.category-section img {
+    width: 100%;
+}
+
+.category-title {
+    font-family: Cinzel;
+    text-align: center;
+    position: absolute;
+    font-size: 10vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subcategory {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.subcategory img{
+    width: 32.5vw;
+    height: 30vw;
+    object-fit: cover;
+    text-align: center;
+    color: white;
+}
+
+.subcategory-title {
+    font-family: Cinzel;
+    text-align: center;
+    position: absolute;
+    font-size: 5vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Product Details css */
+
+.main-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-section {
+    padding-top: 20px;
+    width: 45%;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 8px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-section img:hover {
+    transform: scale(1.1);
+}
+
+.product-details {
+    background-color: #fff;
+    padding: 20px;
+    width: 53%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.product-details h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    color: #888;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.price, .tax {
+    color: #27ae60;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.main-products label, select, button {
+    margin: 10px 0;
+}
+
+.add-to-cart, .buy-now {
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color:#783357;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-cart:hover, .buy-now:hover {
+    background-color: #451a30;
+}
+
+.product-details p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.main-products ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.main-products ul li {
+    margin-bottom: 8px;
+}
+
+.main-products h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for phones */
+    .image-section {
+        width: 100%;
+    }
+    .product-details {
+        padding: 10px;
+        width: 100%;
+    }
+    .product-details h1 {
+        font-size: 2em;
+    }
+    .sub-heading {
+        font-size: 1em;
+    }
+    .price, .tax {
+        font-size: 1em;
+    }
+    .main-products label,
+    .main-products select,
+    .main-products button {
+        margin: 5px 0;
+    }
+    .add-to-cart, .buy-now {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+    .main-products h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* about us css*/
+
+.about-section {
+    font-family: 'Cinzel';
+    background-image: url('aboutuspictures/jason-d-7BhTfoKsheQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 80px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.about-heading {
+    font-size: 2.5em;
+    color: #783357;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-paragraph {
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-image {
+    margin-bottom: 30px;
+}
+
+.about-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-feature img {
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    margin-right: 20px;
+}
+
+.about-feature-content {
+    text-align: left;
+    max-width: 600px;
+}
+
+.about-feature-content h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.about-feature-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact us css */
+.contact-main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-main h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-main section {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-main p {
+    color: #555;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-info img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Shopping cart css */
+
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    width: 30%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-item:hover {
+    transform: scale(1.05);
+}
+
+.shopping-cart-main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.shopping-cart-main p {
+    margin-top: 5px;
+    color: black;
+}
+
+.cart-item button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #783357;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cart-item button:hover {
+    background-color: #5e2844;
+}
+
+.subtotal-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-button-section {
+    text-align: center;
+}
+
+.checkout-button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.checkout-button:hover {
+    background-color: #3c893e;
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for phones */
+    .cart-item {
+        width: 80%;
+    }
+    .cart-item button {
+        padding: 6px 12px;
+        margin-top: 8px;
+    }
+    .checkout-button {
+        padding: 10px 20px;
+    }
+}
